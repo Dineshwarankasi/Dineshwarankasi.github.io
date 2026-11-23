@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Developer Portfolio</title>
+    <!-- Google Fonts: JetBrains Mono for crisp code/logs, Orbitron & Rajdhani for cyberpunk vibe -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=13.0">
+</head>
+<body>
+    <div class="scanlines"></div>
+    
+    <nav class="navbar">
+        <div class="logo">PORTFOLIO<span class="blink">_</span></div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta-buttons">
+                <a href="assets/Dineshwaran_K_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-cyber-btn nav-resume-btn" title="View / Download Resume PDF">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                    <span>RESUME_CV</span>
+                </a>
+                <a href="https://www.linkedin.com/in/dineshwaran-k" target="_blank" rel="noopener noreferrer" class="nav-cyber-btn nav-linkedin-btn" title="LinkedIn Profile">
+                    <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    <span>LINKEDIN</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="hero section">
+        <a id="home" style="position: absolute; top: 0;"></a>
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <div class="profile-card">
+                    <div class="about-image">
+                        <img src="assets/ProfilePic.png" alt="Profile Picture">
+                    </div>
+                    <div class="profile-status">
+                        <span class="status-dot"></span>
+                        <span>AVAILABLE FOR ROLES</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-availability-badge">
+                    <span class="status-dot"></span>
+                    <span>Available for XR, Unity &amp; Omniverse simulation roles</span>
+                </div>
+                <h2 class="cyber-subtitle">SYSTEM INITIALIZED //</h2>
+                <h1 class="glitch" data-text="GAME DEVELOPER">GAME DEVELOPER</h1>
+                <p class="hero-description">Specializing in <span class="highlight">Unity</span> & <span class="highlight">C#</span>. Crafting immersive digital experiences.</p>
+                
+                <div class="hero-bio">
+                    <span class="bio-prompt">> BIO_DATA_RETRIEVED</span>
+                    <p><strong>XR & Game Developer</strong> with <strong>3+ years</strong> architecting spatial computing, real-time simulations, and digital twin environments in <strong>Unity & C#</strong>. Proven track record deploying high-fidelity experiences on <strong>Apple Vision Pro</strong>, <strong>Meta Quest 3</strong>, and <strong>NVIDIA Omniverse</strong>.</p>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="#projects" class="cyber-btn">VIEW_PROJECTS</a>
+                    <a href="assets/Dineshwaran_K_Resume.pdf" target="_blank" rel="noopener noreferrer" class="cyber-btn cyber-btn-accent" title="View / Download Resume PDF">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                        RESUME_CV
+                    </a>
+                    <a href="https://www.linkedin.com/in/dineshwaran-k" target="_blank" rel="noopener noreferrer" class="cyber-btn cyber-btn-linkedin" title="LinkedIn Profile">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" style="margin-right: 8px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        LINKEDIN
+                    </a>
+                    <a href="#contact" class="cyber-btn cyber-btn-secondary">ESTABLISH_CONNECTION</a>
+                </div>
+
+                <!-- HUD Tech Stack Chips -->
+                <div class="hero-hud-stats">
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">UNITY</span>
+                        <span class="hud-stat-label">3D & 2D ENGINE</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">C#</span>
+                        <span class="hud-stat-label">GAMEPLAY & ARCHITECTURE</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">VISIONOS</span>
+                        <span class="hud-stat-label">APPLE VISION PRO</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">QUEST 3</span>
+                        <span class="hud-stat-label">SPATIAL & OPENXR</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">OMNIVERSE</span>
+                        <span class="hud-stat-label">NVIDIA DIGITAL TWIN</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">AUTOHAND</span>
+                        <span class="hud-stat-label">PHYSICS & VR HANDS</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">3D MATH</span>
+                        <span class="hud-stat-label">VECTORS & QUATERNIONS</span>
+                    </div>
+                    <div class="hud-stat-item">
+                        <span class="hud-stat-number">GIT</span>
+                        <span class="hud-stat-label">VERSION CONTROL & CI/CD</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">ACTIVE<span class="glitch-text">_PROJECTS</span></h2>
+            <p class="subtitle" style="margin-top: -20px; margin-bottom: 30px;">Currently running 6 compiled processes. Autonomous crowd simulation & SDG, temporal puzzle systems, spatial computing, VR simulations & aerospace digital twins.</p>
+            
+            <div class="projects-grid">
+                <!-- Project 1: Retail CrowdSim -->
+                <div class="project-card cyber-box">
+                    <span class="card-badge">NVIDIA // SDG SIM</span>
+                    <div class="project-image">
+                        <img src="assets/Retail_CrowdSim_Thumb.jpg" alt="Retail CrowdSim: Autonomous Retail Crowd Simulation & SDG" class="crowdsim-thumb">
+                    </div>
+                    <div class="project-info">
+                        <h3>Retail CrowdSim: Crowd Sim & SDG</h3>
+                        <div class="tech-tags">
+                            <span class="tag">NVIDIA Isaac Sim</span>
+                            <span class="tag">Omniverse Kit</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">OpenUSD</span>
+                            <span class="tag">Replicator SDG</span>
+                        </div>
+                        <p>An NVIDIA Isaac Sim & Omniverse Kit extension combining autonomous NPC customer crowd behaviors, realistic multi-lane queuing systems, and automated Replicator ground-truth data pipelines for training retail vision models.</p>
+                        <a href="javascript:void(0)" id="crowdsim-btn" class="cyber-btn small-btn" onclick="openProjectModal('crowdsim'); return false;">EXECUTE_DEMO</a>
+                    </div>
+                </div>
+
+                <!-- Project 2: ECHO Temporal Protocol -->
+                <div class="project-card cyber-box">
+                    <span class="card-badge">ACTIVE_BUILD</span>
+                    <div class="project-image">
+                        <img src="assets/Echo_Screenshot.jpg" alt="ECHO: Temporal Protocol" class="echo-thumb">
+                    </div>
+                    <div class="project-info">
+                        <h3>ECHO: Temporal Protocol</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Unity 6</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Time-Loop Engine</span>
+                            <span class="tag">2D Physics</span>
+                            <span class="tag">Deterministic Replay</span>
+                        </div>
+                        <p>A 2D temporal puzzle-platformer transforming single-player gameplay into cooperative time relays. Players record and deploy up to 3 real-time automated clones ('Echoes') alongside synchronized laser barriers, zero-delay pressure plates, and physics relays.</p>
+                        <a href="javascript:void(0)" id="echo-btn" class="cyber-btn small-btn" onclick="openProjectModal('echo'); return false;">EXECUTE_DEMO</a>
+                    </div>
+                </div>
+
+                <!-- Project 3: Wordle Mobile Game -->
+                <div class="project-card cyber-box">
+                    <span class="card-badge">ACTIVE_BUILD</span>
+                    <div class="project-image">
+                        <img src="assets/Wordle_Screenshot.jpeg" alt="Wordle Mobile Game" class="wordle-thumb">
+                    </div>
+                    <div class="project-info">
+                        <h3>Wordle Mobile Game</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Mobile UX</span>
+                            <span class="tag">Game Mechanics</span>
+                            <span class="tag">State Flow</span>
+                        </div>
+                        <p>A polished, mobile-friendly recreation of the classic word-guessing game built in Unity. Features intuitive touch controls, smooth procedural animations, reactive board states, and clean responsive UI architecture.</p>
+                        <a href="javascript:void(0)" id="demo-btn" class="cyber-btn small-btn" onclick="openProjectModal('wordle'); return false;">EXECUTE_DEMO</a>
+                    </div>
+                </div>
+
+                <!-- Project 4: VisionOS Simulation -->
+                <div class="project-card cyber-box">
+                    <span class="card-badge confidential">CONFIDENTIAL // NDA</span>
+                    <div class="project-image">
+                        <img src="assets/VisionPro_Cabin_Sim.jpg" alt="Apple Vision Pro AI Cabin Crew Simulation" class="vision-thumb">
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Passenger XR Training Simulation</h3>
+                        <div class="tech-tags">
+                            <span class="tag">VisionOS</span>
+                            <span class="tag">Apple Vision Pro</span>
+                            <span class="tag">Unity</span>
+                            <span class="tag">Conversational AI</span>
+                            <span class="tag">Solo Dev</span>
+                        </div>
+                        <p>An immersive training simulation developed for Apple Vision Pro enabling cabin crew to practice de-escalation, empathy, and communication with dynamic conversational AI virtual passengers.</p>
+                        <a href="javascript:void(0)" id="visionpro-btn" class="cyber-btn small-btn" onclick="openProjectModal('visionpro'); return false;">PROJECT_LOGS</a>
+                    </div>
+                </div>
+
+                <!-- Project 5: Enterprise VR Simulation -->
+                <div class="project-card cyber-box">
+                    <span class="card-badge confidential">ENTERPRISE // VR</span>
+                    <div class="project-image">
+                        <img src="assets/VR_Boardroom_Sim.jpg" alt="Enterprise AI VR Training Platform" class="vr-thumb">
+                    </div>
+                    <div class="project-info">
+                        <h3>Enterprise AI VR Training Platform</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">AutoHand VR</span>
+                            <span class="tag">Virtual Reality</span>
+                            <span class="tag">Conversational AI</span>
+                            <span class="tag">Solo Dev</span>
+                        </div>
+                        <p>An AI-powered Virtual Reality simulation platform featuring an executive boardroom environment where users practice leadership, decision-making, and communication with dynamic AI agents.</p>
+                        <a href="javascript:void(0)" id="vrsim-btn" class="cyber-btn small-btn" onclick="openProjectModal('vrsimulation'); return false;">PROJECT_LOGS</a>
+                    </div>
+                </div>
+
+                <!-- Project 6: AeroTwin Digital Twin -->
+                <div class="project-card cyber-box">
+                    <span class="card-badge confidential">AEROSPACE // TWIN</span>
+                    <div class="project-image">
+                        <img src="assets/AeroTwin_Sim.jpg" alt="AeroTwin 3D Flight and Engine Digital Twin" class="aerotwin-thumb">
+                    </div>
+                    <div class="project-info">
+                        <h3>AeroTwin: 3D Flight & Engine Twin</h3>
+                        <div class="tech-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Digital Twin</span>
+                            <span class="tag">3D Data Viz</span>
+                            <span class="tag">World-Space UI</span>
+                            <span class="tag">Solo Dev</span>
+                        </div>
+                        <p>An interactive 3D data visualization transforming flight telemetry and engine maintenance into an immersive world-space experience across India-Australia routes with real-time diagnostics and workshop twin.</p>
+                        <a href="javascript:void(0)" id="aerotwin-btn" class="cyber-btn small-btn" onclick="openProjectModal('aerotwin'); return false;">PROJECT_LOGS</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">ESTABLISH<span class="glitch-text">_CONNECTION</span></h2>
+            <p class="subtitle" style="margin-top: -20px; margin-bottom: 30px;">Transmit mission briefs, technical inquiries, or contract discussions.</p>
+            
+            <div class="contact-grid">
+                <!-- Column 1: Transmission Console -->
+                <form class="contact-form cyber-box" id="contact-form">
+                    <div class="terminal-panel-header">
+                        <span class="panel-tag">// CONSOLE_TRANSMIT</span>
+                        <span class="comms-status-chip" id="comms-status"><span class="status-dot"></span>LINK_ONLINE</span>
+                    </div>
+                    <div class="input-group">
+                        <label for="name">ID_NAME</label>
+                        <input type="text" id="name" name="name" placeholder="Agent / Recruiter / Studio Name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">COMM_LINK (EMAIL)</label>
+                        <input type="email" id="email" name="email" placeholder="contact@domain.network" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="message">DATA_PAYLOAD</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Transmit project specifications, collaboration briefs, or inquiries..." required></textarea>
+                    </div>
+                    <button type="submit" class="cyber-btn" id="transmit-btn">TRANSMIT_MESSAGE</button>
+                    <div id="transmission-status" class="transmission-status" style="display: none;"></div>
+                </form>
+
+                <!-- Column 2: Comms Terminal & Direct Nodes -->
+                <div class="contact-telemetry cyber-box">
+                    <div class="terminal-panel-header">
+                        <span class="panel-tag">// DIRECT_CHANNELS</span>
+                        <span class="module-status">ENCRYPTED_256</span>
+                    </div>
+                    
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">> PRIMARY_OPERATOR</span>
+                        <p class="telemetry-val highlight">Dineshwaran K // XR & Game Developer</p>
+                    </div>
+
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">> GEOGRAPHIC_NODE</span>
+                        <p class="telemetry-val">Tamil Nadu, India // IST (UTC +5:30)</p>
+                    </div>
+
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">> OPERATIONAL_STATUS</span>
+                        <p class="telemetry-val"><span class="status-dot" style="display:inline-block; margin-right: 6px;"></span> Available for XR, Unity &amp; Omniverse simulation roles</p>
+                    </div>
+
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">> CORE_SPECIALIZATIONS</span>
+                        <div class="telemetry-chips">
+                            <span class="chip-mini">Unity (3D/2D)</span>
+                            <span class="chip-mini">Apple Vision Pro</span>
+                            <span class="chip-mini">Meta Quest 3</span>
+                            <span class="chip-mini">NVIDIA Omniverse</span>
+                        </div>
+                    </div>
+
+                    <div class="telemetry-item">
+                        <span class="telemetry-label">> EXTERNAL_NODES</span>
+                        <div class="telemetry-links">
+                            <a href="https://www.linkedin.com/in/dineshwaran-k" target="_blank" class="cyber-btn small-btn">LINKEDIN_PROFILE</a>
+                            <a href="#about" class="cyber-btn small-btn cyber-btn-secondary">RETURN_TO_TOP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Fullscreen View -->
+    <div id="project-view" class="full-page-view">
+        <div class="view-header">
+            <div class="modal-logo">DK<span class="logo-accent">_PORTFOLIO</span></div>
+            <button class="close-btn" onclick="closeProjectModal()">&times; TERMINATE_PROCESS</button>
+        </div>
+        <div class="header-neon-divider"></div>
+        <div class="split-layout">
+            <div class="left-panel">
+                <div class="terminal-header-bar">
+                    <div class="title-with-underline">
+                        <span class="modal-section-title">SYSTEM<span class="pink-text">_LOGS</span></span>
+                        <div class="cyan-underline"></div>
+                    </div>
+                    <span class="dump-log-btn" id="dump-log-btn" onclick="completeTypewriterInstantly()">[ CLICK TO DUMP FULL LOG ]</span>
+                </div>
+                <div id="cards-container" class="cards-container">
+                    <!-- Dynamic HUD cards injected here -->
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="cyber-display-frame">
+                    <video id="demo-video" playsinline loop muted style="display: none;" onclick="toggleVideoPlayback()">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div id="demo-image-container" style="display: none; position: relative; text-align: center; width: 100%;">
+                        <img id="demo-image" src="" alt="Project Visual Preview">
+                        <div id="demo-badge" class="confidential-badge">CONFIDENTIAL // NDA PROTECTED</div>
+                    </div>
+                    <!-- Bottom Controls HUD Bar -->
+                    <div id="modal-controls-bar" class="modal-controls-bar">
+                        <!-- Dynamic control keycaps injected here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>END OF FILE. &copy; 2026 Game Developer.</p>
+    </footer>
+
+    <script src="script.js?v=12.0"></script>
+</body>
+</html>
