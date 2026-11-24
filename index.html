@@ -8,13 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Orbitron:wght@400;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=13.0">
+    <link rel="stylesheet" href="style.css?v=14.0">
 </head>
 <body>
     <div class="scanlines"></div>
     
     <nav class="navbar">
-        <div class="logo">PORTFOLIO<span class="blink">_</span></div>
+        <a href="#about" class="logo">PORTFOLIO<span class="blink">_</span></a>
         <div class="nav-right">
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
@@ -24,15 +24,42 @@
             <div class="nav-cta-buttons">
                 <a href="assets/Dineshwaran_K_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-cyber-btn nav-resume-btn" title="View / Download Resume PDF">
                     <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
-                    <span>RESUME_CV</span>
+                    <span class="btn-text">RESUME_CV</span>
                 </a>
                 <a href="https://www.linkedin.com/in/dineshwaran-k" target="_blank" rel="noopener noreferrer" class="nav-cyber-btn nav-linkedin-btn" title="LinkedIn Profile">
                     <svg viewBox="0 0 24 24" width="13" height="13" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                    <span>LINKEDIN</span>
+                    <span class="btn-text">LINKEDIN</span>
                 </a>
             </div>
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle navigation menu" title="Navigation Menu">
+                <span class="bar bar-1"></span>
+                <span class="bar bar-2"></span>
+                <span class="bar bar-3"></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Cyber Navigation Drawer -->
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <div class="mobile-nav-header">
+            <span>// NAVIGATION_NODES</span>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#about" class="mobile-nav-link"><span class="nav-code">[01]</span> ABOUT</a></li>
+            <li><a href="#projects" class="mobile-nav-link"><span class="nav-code">[02]</span> PROJECTS</a></li>
+            <li><a href="#contact" class="mobile-nav-link"><span class="nav-code">[03]</span> CONTACT</a></li>
+        </ul>
+        <div class="mobile-nav-ctas">
+            <a href="assets/Dineshwaran_K_Resume.pdf" target="_blank" rel="noopener noreferrer" class="cyber-btn cyber-btn-accent mobile-cta-btn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                VIEW_RESUME
+            </a>
+            <a href="https://www.linkedin.com/in/dineshwaran-k" target="_blank" rel="noopener noreferrer" class="cyber-btn cyber-btn-linkedin mobile-cta-btn">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" style="margin-right: 6px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                LINKEDIN
+            </a>
+        </div>
+    </div>
 
     <header id="about" class="hero section">
         <a id="home" style="position: absolute; top: 0;"></a>
@@ -359,6 +386,6 @@
         <p>END OF FILE. &copy; 2026 Game Developer.</p>
     </footer>
 
-    <script src="script.js?v=12.0"></script>
+    <script src="script.js?v=14.0"></script>
 </body>
 </html>

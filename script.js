@@ -339,7 +339,9 @@ function openProjectModal(mode) {
     // Open Modal
     projectView.style.display = "block";
     document.body.style.overflow = "hidden";
+    document.documentElement.style.overflow = "hidden";
     if (leftPanel) leftPanel.scrollTop = 0;
+    projectView.scrollTop = 0;
 
     // Render Left Panel HUD Cards
     if (cardsContainer) {
@@ -407,7 +409,8 @@ function closeProjectModal() {
 
     if (!projectView) return;
     projectView.style.display = "none";
-    document.body.style.overflow = "auto";
+    document.body.style.overflow = "";
+    document.documentElement.style.overflow = "";
 
     if (video) {
         try {
@@ -451,6 +454,46 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // Mobile Navigation Drawer Toggle
+    const mobileNavToggle = document.getElementById("mobile-nav-toggle");
+    const mobileNavDrawer = document.getElementById("mobile-nav-drawer");
+    const mobileNavLinks = document.querySelectorAll(".mobile-nav-link, .mobile-cta-btn");
+
+    if (mobileNavToggle && mobileNavDrawer) {
+        mobileNavToggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            const isOpen = mobileNavDrawer.classList.toggle("open");
+            mobileNavToggle.classList.toggle("active", isOpen);
+            mobileNavToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener("click", () => {
+                mobileNavDrawer.classList.remove("open");
+                mobileNavToggle.classList.remove("active");
+                mobileNavToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+
+        // Close drawer when clicking anywhere outside
+        document.addEventListener("click", (e) => {
+            if (mobileNavDrawer.classList.contains("open") && !mobileNavDrawer.contains(e.target) && !mobileNavToggle.contains(e.target)) {
+                mobileNavDrawer.classList.remove("open");
+                mobileNavToggle.classList.remove("active");
+                mobileNavToggle.setAttribute("aria-expanded", "false");
+            }
+        });
+
+        // Close on ESC key
+        document.addEventListener("keydown", (e) => {
+            if (e.key === "Escape" && mobileNavDrawer.classList.contains("open")) {
+                mobileNavDrawer.classList.remove("open");
+                mobileNavToggle.classList.remove("active");
+                mobileNavToggle.setAttribute("aria-expanded", "false");
+            }
+        });
+    }
 
     // Event listeners as backup to inline onclicks
     const crowdSimBtn = document.getElementById("crowdsim-btn");
